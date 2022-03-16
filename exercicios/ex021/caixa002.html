@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            margin: 10px;
+            padding: 10px;
+            background-color: darkcyan;
+        }
+        h1 {
+            padding: 5px;
+        }
+
+        .navegacao {
+            background-color: green;
+            padding: 5px;
+            box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.274);
+        }
+
+        .navegacao a {
+            text-decoration: none;
+            font-weight: bold;
+            color: lightyellow;
+            margin-right: 20px;
+        }
+
+        .navegacao a:hover {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        main {
+            background-color: grey;
+            margin: 10px;
+            padding: 10px;
+            border-radius:15px;
+        }
+
+        article {
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        aside {
+            background-color: lightslategrey;
+        }
+
+        footer > p {
+            margin: 0;
+        }
+
+        footer {
+            background-color: black;
+            color: blanchedalmond;
+            text-align: center;
+            padding: 5px;
+    
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav class="navegacao">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Tecnologia Politica Esportes</p>
+        </section>
+        <section>
+            <article>
+                <h2>Noticias no Brasil</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, aperiam! Corrupti alias quasi cum, libero, commodi quo non nisi officiis, optio quas ab nesciunt rem itaque maxime ducimus at mollitia?</p>
+                <aside>
+                    <p>Artigo escrito por Guilherme Santos Costa</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Guilherme Costa</p>
+    </footer>
+</body>
+</html>
