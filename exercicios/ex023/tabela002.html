@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        table {
+           width: 400px;
+           height: 100px;
+           text-align: center;
+           border-collapse: collapse;
+
+        }
+
+        td, th {
+            border: 1px solid;
+            padding: 20px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(41, 37, 37);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando tabelas GRANDES</h1>
+
+    <!--ANATOMIA PARA TABELAS GRANDES: 
+        TABLE {
+            THEAD (tr, td, th)
+            TBODY (tr, td, th)
+            TFOOT (tr, td, th)
+        }
+        -->
+    <table>
+        <thead>
+            <tr>
+                <th>ESTADO</th>
+                <th>POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SÃO PAULO</td>
+                <td>45 919 49</td>
+            </tr>
+            <tr>
+                <td>BAHIA</td>
+                <td>14 985 284</td>
+            </tr>
+            <tr>
+                <td>RIO DE JANEIRO</td>
+                <td>17 463 349</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>TOTAL DE HABITANTES</th>
+                <td><strong>78.368.123</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
