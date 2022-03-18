@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* Body e Header*/
+body, html {
+    min-width: 95vw;
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 3.6vw;
+}
+
+body p {
+    margin: 0;
+
+}
+
+.container {
+    margin: auto;
+    background-color: #000;
+    height: 250px;
+}
+
+.container h1 {
+    padding-top: 40px;
+    margin: 0;
+    font-family: 'Passion One', cursive;
+    font-size: 10vw;
+    font-weight: 700; 
+    font-variant: small-caps;
+    letter-spacing: 0.001em;  
+}
+
+.container p {
+    margin: 0;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.container, a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container a {
+    font-weight: bold;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+/*SECTION*/
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    
+}
+
+section p {
+    padding: 80px 50px;
+}
+
+.parte-2 {
+    background: black url('imagens/background001.jpg') center center no-repeat fixed;
+}
+
+.parte-4 {
+    background: black url('imagens/background002.jpg') center center no-repeat fixed;
+}
+
+.parte-2 > p, .parte-4 > p {
+    padding: 40px 5px;
+    margin-left: 45px;
+    display: inline-block;
+    background-color: #403a3a6e;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: -6px 6px 16px 3px #00000094;
+}
+
+.parte-2, .parte-4 {
+    padding: 40px 0;
+    box-shadow:inset -2px 2px 10px 5px #00000070;
+}
+
+/*FOOTER*/
+
+footer {
+    height: 80px;
+    background-color: #000;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+footer p {
+    padding-top: 8px;
+}
+
+footer a {
+    font-weight:bold;
+    font-size: 18px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
