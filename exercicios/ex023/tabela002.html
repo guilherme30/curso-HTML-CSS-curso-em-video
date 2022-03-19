@@ -19,14 +19,31 @@
 
         }
 
+        tbody > tr:nth-child(even) /* ou 2n*/ {
+            background-color:rgb(161, 160, 160);
+        }
+
+        tbody > tr:nth-child(odd) /* ou 2n-1*/{
+            background-color:rgb(250, 249, 249);
+        }
+
+        caption {
+            background-color: rgb(161, 160, 160);
+            padding: 10px;
+        }
+
         td, th {
             border: 1px solid;
-            padding: 20px;
+            padding: 10px;
         }
 
         thead, tfoot {
             background-color: rgb(41, 37, 37);
             color: #fff;
+        }
+
+        .num {
+            text-align: right;
         }
     </style>
 </head>
@@ -35,36 +52,134 @@
 
     <!--ANATOMIA PARA TABELAS GRANDES: 
         TABLE {
+            CAPTION
             THEAD (tr, td, th)
             TBODY (tr, td, th)
             TFOOT (tr, td, th)
         }
         -->
     <table>
+        <caption>População de Cada Estado do Brasil</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col">POPULAÇÃO</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>SÃO PAULO</td>
-                <td>45 919 49</td>
+                <td>ACRE</td>
+                <td class="num">795 145</td>
+            </tr>
+            <tr>
+                <td>ALAGOAS</td>
+                <td class="num">3 327 551</td>
+            </tr>
+            <tr>
+                <td>AMAPÁ</td>
+                <td class="num">756 500</td>
+            </tr>
+            <tr>
+                <td>AMAZONAS</td>
+                <td class="num">3 893 763</td>
             </tr>
             <tr>
                 <td>BAHIA</td>
-                <td>14 985 284</td>
+                <td class="num">15 150 143</td>
+            </tr>
+            <tr>
+                <td>CEARÁ</td>
+                <td class="num">8 867 448</td>
+            </tr>
+            <tr>
+                <td>DISTRITO FEDERAL</td>
+                <td class="num">72 867 869</td>
+            </tr>
+            <tr>
+                <td>ESPÍRITO SANTO</td>
+                <td class="num">3 894 899</td>
+            </tr>
+            <tr>
+                <td>GOIÁS</td>
+                <td class="num">6 551 322</td>
+            </tr>
+            <tr>
+                <td>MARANHÃO</td>
+                <td class="num">6 861 924</td>
+            </tr>
+            <tr>
+                <td>MATO GROSSO</td>
+                <td class="num">3 236 578</td>
+            </tr>
+            <tr>
+                <td>MATO GROSSO DO SUL</td>
+                <td class="num">2 630 098</td>
+            </tr>
+            <tr>
+                <td>MINAS GERAIS</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>PARÁ</td>
+                <td class="num">8 101 180</td>
+            </tr>
+            <tr>
+                <td>PARAÍBA</td>
+                <td class="num">3 950 359</td>
+            </tr>
+            <tr>
+                <td>PARANÁ</td>
+                <td class="num">11 112 062	</td>
+            </tr>
+            <tr>
+                <td>PERNAMBUCO</td>
+                <td class="num">9 297 861</td>
+            </tr>
+            <tr>
+                <td>PAUÍ</td>
+                <td class="num">3 198 185</td>
             </tr>
             <tr>
                 <td>RIO DE JANEIRO</td>
-                <td>17 463 349</td>
+                <td class="num">16 497 395</td>
+            </tr>
+            <tr>
+                <td>RIO GRANDE DO NORTE</td>
+                <td class="num">3 419 550</td>
+            </tr>
+            <tr>
+                <td>RIO GRANDE DO SUL</td>
+                <td class="num">11 228 091</td>
+            </tr>
+            <tr>
+                <td>RONDÔNIA</td>
+                <td class="num">1 755 015	</td>
+            </tr>
+            <tr>
+                <td>RORAIMA</td>
+                <td class="num">500 826</td>
+            </tr>
+            <tr>
+                <td>SANTA CATARINA</td>
+                <td class="num">6 734 568</td>
+            </tr>
+            <tr>
+                <td>SÃO PAULO</td>
+                <td class="num">44 169 350</td>
+            </tr>
+            <tr>
+                <td>SERGIPE</td>
+                <td class="num">2 227 294	</td>
+            </tr>
+            <tr>
+                <td>TOCANTINS</td>
+                <td class="num">1 502 759</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>TOTAL DE HABITANTES</th>
-                <td><strong>78.368.123</strong></td>
+                <th scope="row">TOTAL DE HABITANTES</th>
+                <td class="num"><strong>210.147.126</strong></td>
             </tr>
         </tfoot>
     </table>
