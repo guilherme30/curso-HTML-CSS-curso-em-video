@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        table {
+            width: 900px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            padding: 10px;
+            font-style: italic;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo tabela completa</h1>
+
+    <table>
+         <caption>Nomes de Pessoas e Seus Filmes Favoritos</caption>
+         <thead>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
+         </thead>
+         <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>José Antônio Lacerda</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+               
+                <td>Guilherme Costa</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>    
+            </tr>
+            <tr>
+                
+                <td>Rodrigo Alvez da Silva</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Maria Batista Pereira</td>
+                <td>De Pernas Pro Ar</td>
+                <td>Tropa de Elite</td>
+                <td>Cidade de Deus</td>
+            </tr>
+            <tr>
+                
+                <td>Ana Luisa Vidal Golveia</td>
+                <td>Judas e o Messias Negro</td>
+                <td>Godfather</td>
+                <td>Infiltrado na Klan</td>
+            </tr>
+            <tr>
+                
+                <td>Sofia Nunes Sampaio</td>
+                <td>João e Maria</td>
+                <td>Velozes e Furiosos</td>
+                <td>Kingsman</td>
+            </tr>
+         </tbody>
+    </table>
+</body>
+</html>
