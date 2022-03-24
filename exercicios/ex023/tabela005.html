@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        table {
+          border-collapse: collapse;  
+        }
+
+        caption {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .col-1, .col-3 {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="col-1">
+            <col class="col-2">
+            <col class="col-3">
+            <col class="col-4">
+
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>João Gomes da Silva</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Contador</td>
+        </tr>
+        <tr>
+            <td>Rodrigo Armando Jr</td>
+            <td>M</td>
+            <td>59</td>
+            <td>Enfermeiro</td>
+        </tr>
+        <tr>
+            <td>Joana Francisca Fonseca</td>
+            <td>F</td>
+            <td>55</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Luíza Moraes Moreira</td>
+            <td>F</td>
+            <td>34</td>
+            <td>Cantora</td>
+        </tr>
+        <tr>
+            <td>Guilherme Santos Costa</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Jozé Pinheiro dos Santos</td>
+            <td>M</td>
+            <td>58</td>
+            <td>Farmaceutico</td>
+        </tr>
+    </table>
+</body>
+</html>
